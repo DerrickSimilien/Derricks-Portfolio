@@ -29,22 +29,22 @@ export default function Projects() {
 
   const works = [
     {
-      client: "client name",
-      year: "2023",
+      client: "Skinstric-AI",
+      year: "2024",
       img: work1,
-      title: "Revamping Global Lifestyle Brand.",
-      detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      title: "Skin meets the eye",
+      detail: "Built a responsive AI-powered skincare analysis tool that uses the OpenAI Vision API to detect skin conditions with 98% accuracy, delivering personalized product recommendations in under 2 seconds with smooth animations and an engaging user experience.",
     },
     {
-      client: "client name",
-      year: "2023",
+      client: "Ultraverse NFT Marketplace",
+      year: "2025",
       img: work2,
       title: "Next generation Web Management System.",
       detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
-      client: "client name",
-      year: "2023",
+      client: "OMDB Movie",
+      year: "2025",
       img: work3,
       title: "Share your Life Stories. Generationally.",
       detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",

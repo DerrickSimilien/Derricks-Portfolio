@@ -29,25 +29,36 @@
   position: relative;
 }
 
-.workCard--body img {
+/* .workCard--body img {
   display: block;
   margin: 0 auto;
   width: auto;
   height: 500px;
+} */
+
+.workCard--body img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;       /* was 500px */
+  height: 450px;
+  aspect-ratio: 16 / 10;   /* wider than 4/3 */
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 .workCard--body p {
   position: absolute;
   right: 0px;
   bottom: 50px;
-  color: #fff;
+  color: #ff4d4d;
   font-size: 18px;
   font-family: var(--NML);
   font-style: normal;
   font-weight: 500;
   line-height: 140%; /* 25.2px */
-  opacity: 0.6;
-  mix-blend-mode: hard-light;
+  opacity: 1;
+mix-blend-mode: normal;
   max-width: 36ch;
 }
 
