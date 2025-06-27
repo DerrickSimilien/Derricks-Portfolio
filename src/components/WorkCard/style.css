@@ -47,34 +47,63 @@
   border-radius: 4px;
 }
 
-.workCard--body p {
+/* .workCard--body p {
   position: absolute;
-  right: 0px;
+ left: 100%;
   bottom: 50px;
   color: #ff4d4d;
   font-size: 18px;
   font-family: var(--NML);
   font-style: normal;
   font-weight: 500;
-  line-height: 140%; /* 25.2px */
+  line-height: 140%; 
   opacity: 1;
 mix-blend-mode: normal;
   max-width: 36ch;
+} */
+
+
+.workCard--body p {
+  position: relative; /* ← CHANGED */
+  left: 30px;          /* instead of left: 100% */
+  bottom: auto;        /* remove this */
+  margin-top: 20px;    /* adds space below image */
+  display: block;
 }
 
-.workCard--body h1 {
+
+/* .workCard--body h1 {
   position: absolute;
   top: 80px;
   color: #fff;
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%; /* 48px */
+  line-height: 100%;
   letter-spacing: -1.92px;
   text-transform: uppercase;
   mix-blend-mode: difference;
   max-width: 20ch;
+} */
+
+
+.workCard--body h1 {
+  position: relative;     /* instead of absolute */
+   top: 10px;
+  left: 10%;              /* no need for top */
+  margin-top: 20px;       /* adds some breathing room */
+  color: red;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -1.92px;
+  text-transform: uppercase;
+  mix-blend-mode: difference;
+  max-width: none;
+  white-space: nowrap; 
 }
+
 
 @media (max-width: 1500px) {
   .workCard--body h1 {

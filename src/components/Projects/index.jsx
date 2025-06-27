@@ -39,15 +39,15 @@ export default function Projects() {
       client: "Ultraverse NFT Marketplace",
       year: "2025",
       img: work2,
-      title: "Next generation Web Management System.",
-      detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      title: "Own the Web. One NFT at a Time.",
+      detail: "A React-based NFT marketplace web app deployed on Vercel, designed to showcase digital artwork from multiple NFT creators. The platform dynamically fetches and displays user and artwork data via API integration, allowing users to explore individual artists and their collections in an interactive, visually engaging experience.",
     },
     {
       client: "OMDB Movie",
       year: "2025",
       img: work3,
-      title: "Share your Life Stories. Generationally.",
-      detail: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      title: "Family, Films, and Forever",
+      detail: "Developed and integrated a search API to display movies, anime, and more, featuring fully responsive design, dynamic routing, and loading states. Enabled users to perform large-scale searches and view detailed content on individual routes.",
     },
   ]
 

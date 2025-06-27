@@ -61,7 +61,7 @@ export default function Resume() {
           <div className="resume--grid--detail--data">
             <div className="resume--grid--detail--data--name">
               <h2>
-                <ParaWriting stagger={0.08} text={"David Bragg"} />
+                <ParaWriting stagger={0.08} text={"Derrick Similien"} />
               </h2>
               <h4>
                 <ScrambleText shuffle delay={0}>
@@ -108,7 +108,7 @@ export default function Resume() {
         <div className="resume--grid--experience">
           <div className="resume--grid--experience--head">
             <p className="theme--detail">
-              <ScrambleText delay={0}>A highly motivated software engineer prepared to utilise exceptional software, problem-solving and communication skills to further my programming passion as a website developer.</ScrambleText>
+              <ScrambleText delay={0}>Creative and detail-oriented software engineer focused on crafting high-quality, interactive websites. Passionate about solving real-world problems through clean, efficient code.</ScrambleText>
             </p>
 
             <motion.h3 initial="hidden" animate={controls} variants={opacityVariant} transition={{ duration: 1, delay: 0.5 }} className="theme--text">
