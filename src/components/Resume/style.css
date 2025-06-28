@@ -30,6 +30,16 @@
   margin-top: 24px;
 }
 
+/* .resume--grid ul li *,
+.resume--grid ul li {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; 
+  opacity: 0.6;
+} */
+
 .resume--grid ul li *,
 .resume--grid ul li {
   color: #fff;
@@ -37,7 +47,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: 140%; /* 19.6px */
-  opacity: 0.6;
 }
 
 .resume--grid--detail {
@@ -107,6 +116,57 @@
 
 .resume--grid--experience--body {
   padding-top: 50px;
+}
+
+.resume--grid--detail--data--skills ul li {
+    color: #ffffff !important; /* pure white */
+     opacity: 2 !important;
+}
+
+.resume--grid ul li:hover {
+  color: #00c853; /* vibrant green */
+  text-shadow:
+    0 0 5px #00c853,
+    0 0 10px #00ff5e,
+    0 0 20px #00ff5e; /* brighter outer glow */
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
+.resume .theme--detail {
+    color: #ffffff !important; /* force white */
+    opacity: 1 !important;     /* force visible */
+}
+
+.resume .theme--text {
+    color: #00c853; /* vibrant green */
+}
+
+.resume .theme--text *,
+.resume .theme--text .hash {
+    color: #00c853 !important;
+}
+
+.resume--grid--experience--body h4,
+.resume--grid--experience--body h4 * {
+    color: #00c853 !important;
+}
+
+.resume--grid--detail--data--name h2 {
+    color: #00ff5e; /* lighter neon green */
+    text-shadow:
+        0 0 5px #00ff5e,
+        0 0 10px #00ff5e,
+        0 0 20px #00ff5e; /* bright layered glow */
+    transition: all 0.3s ease;
+}
+
+.resume--grid--detail--data--name h2:hover {
+    transform: scale(1.02);
+    text-shadow:
+        0 0 10px #00ff5e,
+        0 0 20px #00ff5e,
+        0 0 40px #00ff5e; /* stronger on hover */
 }
 
 @media (max-width: 1500px) {

@@ -25,6 +25,45 @@
   opacity: 0.6;
 }
 
+
+.resumeCard--body--left h4 {
+    color: #00c853; /* vibrant green */
+}
+
+.resumeCard--body--left p {
+    color: #00c853; /* green role title */
+    opacity: 1; /* ensure it is fully visible */
+}
+
+.resumeCard--body--right p {
+    color: #00c853; /* green date */
+}
+
+.resumeCard--body--left h4:hover,
+.resumeCard--body--left p:hover,
+.resumeCard--body--right p:hover {
+    text-shadow: 0 0 5px #00c853, 0 0 10px #00ff5e;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+.resumeCard--body--right h4,
+.resumeCard--body--right h4 *,
+.resumeCard--body--right p,
+.resumeCard--body--right p * {
+    color: #00c853 !important; /* vibrant green */
+}
+
+.resumeCard--body--right h4:hover,
+.resumeCard--body--right h4 *:hover {
+    text-shadow: 0 0 5px #00c853, 0 0 10px #00ff5e;
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+
+
+
 .resumeCard--body--center {
   flex-basis: 50%;
 }
@@ -43,9 +82,23 @@
   list-style-position: outside;
 }
 
-.resumeCard--body--center ul li {
+/* .resumeCard--body--center ul li {
   margin-bottom: 15px;
+  color: #00c853;
+} */
+
+.resumeCard--body--center ul li,
+.resumeCard--body--center ul li * {
+    color: #fff !important; /* or #eaeaea for softer white */
+      opacity: 1 !important;  /* in case opacity is lowered elsewhere */
+    margin-bottom: 6px;
 }
+
+.resume--grid--detail--data--skills h4 {
+    color: #00c853; /* vibrant green */
+}
+
+
 
 @media (max-width: 700px) {
   .resumeCard--body {
