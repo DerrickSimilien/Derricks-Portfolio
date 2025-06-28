@@ -14,6 +14,19 @@
   line-height: inherit;
 }
 
+.hideText--overlay {
+    position: absolute; /* if needed for overlaying */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: inherit; /* ensure it inherits color */
+}
+
+.workCard h1 {
+    color: #00c853;
+}
+
 .hideText > div:not(.hideText--overlay) {
   opacity: 0;
   display: inline-flex;

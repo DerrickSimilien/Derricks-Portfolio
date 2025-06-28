@@ -1,8 +1,9 @@
 header {
-  height: 100vh;
+  height: 110vh;
   padding: 60px 102px;
   position: relative;
 }
+
 
 header a {
   color: inherit;
@@ -64,6 +65,7 @@ header .header--hash {
   left: 0%;
   bottom: 0%;
   align-items: flex-end;
+   top: 61%;
 }
 
 .header--center {
@@ -135,6 +137,8 @@ header .header--bottom p {
   z-index: 20;
 }
 
+
+
 .header--name > .header--name--sec {
   color: var(--main);
   display: inline-block;
@@ -180,6 +184,27 @@ header .header--bottom p {
   right: 0%;
   transform: translate(50%, 50%);
 }
+
+
+header .header--top a {
+  transition: color 0.3s ease,
+    text-shadow 0.4s ease,
+    transform 0.3s ease;
+   text-shadow 0.3s ease,
+    transform 0.3s ease;
+  display: inline-block;
+}
+
+header .header--top a:hover {
+  color: #00c853; /* vibrant green */
+  text-shadow:  0 0 5px #00c853,
+    0 0 10px #00c853,
+    0 0 20px #00ff5e, /* brighter outer glow */
+    0 0 40px #00ff5e;
+  transform: scale(1.1);
+}
+
+
 
 @media (max-width: 1500px) {
   .header--name {

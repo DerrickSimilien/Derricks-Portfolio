@@ -3,6 +3,12 @@
   margin-top: 50px;
 }
 
+.workCard h1 {
+    color: #00c853; /* your vibrant green */
+}
+
+
+
 .workCard--head {
   display: flex;
   justify-content: space-between;

@@ -42,6 +42,9 @@
   grid-area: title;
 }
 
+
+
+
 .projects--grid--detail {
   grid-area: detail;
   padding-left: 20%;
