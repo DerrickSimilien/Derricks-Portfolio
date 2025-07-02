@@ -15,9 +15,10 @@ export default function TechCard({ item, delay, controls }) {
       <motion.div initial="hidden" animate={controls} variants={blurVariants} transition={{ duration: 0.5, delay: delay }}>
         <Icon img={item.icon} />
       </motion.div>
-      <h3>
-        <TextWriting delay={delay} nocursor controls={controls} stagger={0.08} text={item.title} />
-      </h3>
+      <h3 className="techCard--title">
+  <TextWriting delay={delay} nocursor controls={controls} stagger={0.08} text={item.title} />
+</h3>
+
       <p>
         <ScrambleText delay={delay}>{item.detail}</ScrambleText>
       </p>
