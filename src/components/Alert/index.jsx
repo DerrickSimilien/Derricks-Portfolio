@@ -12,7 +12,8 @@ const Alert = ({ isVisible, text, variant = "success" }) => {
   return (
     <AnimatePresence>
       {isVisible && (
-        <motion.div className="alert" initial="initial" animate="animate" exit="exit" style={{ backgroundColor: `${variant === "success" ? "green" : "red"}` }} transition={{ duration: 1 }} variants={translateVariants}>
+        <motion.div className="alert" initial="initial" animate="animate" exit="exit" style={{ backgroundColor: variant === "success" ? "#00ff66" : "#ff4444",
+  boxShadow: variant === "success" ? "0 0 20px #00ff66" : "0 0 20px #ff4444", }} transition={{ type: "spring", stiffness: 50, damping: 10  }} variants={translateVariants}>
           <p>{text}</p>
         </motion.div>
       )}
