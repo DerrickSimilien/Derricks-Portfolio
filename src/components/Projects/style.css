@@ -77,6 +77,23 @@
   }
 }
 
+@media (max-width: 600px) {
+  .projects--grid--title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px; /* optional: adds side breathing room */
+  }
+
+
+
+  
+}
+
+
+
+
 @media (max-width: 1500px) {
   .projects {
     padding: 40px 60px;

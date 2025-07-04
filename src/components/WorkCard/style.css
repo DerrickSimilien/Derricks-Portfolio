@@ -47,7 +47,8 @@
   margin: 0 auto;
   width: 100%;
   max-width: 600px;       /* was 500px */
-  height: 450px;
+  /* height: 450px; */
+  height:auto;
   aspect-ratio: 16 / 10;   /* wider than 4/3 */
   object-fit: cover;
   border-radius: 4px;
@@ -111,6 +112,35 @@ mix-blend-mode: normal;
 }
 
 
+@media (max-width: 600px) {
+  .workCard--body img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px; /* optional for aesthetic */
+    padding: 0;
+  }
+
+  .workCard--body {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .workCard {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
 @media (max-width: 1500px) {
   .workCard--body h1 {
     font-size: 36px;
@@ -121,12 +151,17 @@ mix-blend-mode: normal;
   .workCard--body img {
     height: 420px;
   }
+  .workCard--body img {
+    height: auto; /* remove fixed height */
+  }
 }
 
 @media (max-width: 700px) {
   .workCard--body img {
-    width: 80%;
-    padding: 20% 0;
+    /* width: 80%; */
+    width: 100%;
+    /* padding: 20% 0; */
+    padding: 0;
     height: auto;
   }
 
