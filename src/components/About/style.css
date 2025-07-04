@@ -119,3 +119,18 @@
   }
 
 }
+
+@media (max-width: 768px) {
+
+.about {
+    height: fit-content; /* allow content to define height */
+  }
+
+  .about--detail {
+    margin-bottom: 40px; /* add breathing room above footer */
+  }
+
+  .about--grid {
+    padding-bottom: 40px; /* ensures the section ends cleanly */
+  }
+}

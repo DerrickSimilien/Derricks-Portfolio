@@ -236,6 +236,8 @@ header .header--top a:hover {
 }
 
 
+
+
 @media (max-width: 1500px) {
   .header--name {
     margin-top: 10vh;
@@ -307,3 +309,67 @@ header .header--top a:hover {
     align-items: center;
   }
 }
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  .header--top,
+  .header--video,
+  .header--center,
+  .header--right,
+  .header--menuBtn,
+  .header--bottom {
+    padding: 20px;
+  }
+
+  .header--name {
+    margin-top: max(15vh, 80px);
+    font-size: 12vw; /* responsive scaling similar to 600px mobile */
+    text-align: center;
+  }
+
+  .header--bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin-bottom: 150px;
+  }
+
+  .header--bottom div,
+  .header--bottom div h3 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header--bottom div p {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+   .header--bottom h3:first-of-type {
+    margin-top: 30px; /* adjust value if you want more/less spacing */
+  }
+
+   .header--bottom h3:last-of-type {
+    margin-top: 25px; /* lower the SYDNEY/NEW_YORK row */
+  }
+
+  .header--video video {
+    height: 70vw;
+    margin-bottom: 40vw;
+  }
+
+  .connect--button {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+

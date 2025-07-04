@@ -77,7 +77,7 @@ export default function Projects() {
         <div className="projects--grid--content">
           <div className="projects--grid--content--heading">
             <h2>
-              <ParaWriting stagger={0.08} text={"My "} sec={"Works"} />
+              <ParaWriting stagger={0.08} text={"My "} sec={"Work"} />
             </h2>
           </div>
           <div className="projects--grid--content--works">

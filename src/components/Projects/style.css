@@ -86,9 +86,12 @@
     padding: 0 20px; /* optional: adds side breathing room */
   }
 
+.projects--grid--content--heading {
+    text-align: center; /* centers "MY WORKS" on mobile */
+    width: 100%; /* ensures full width for centering */
+  }
 
 
-  
 }
 
 

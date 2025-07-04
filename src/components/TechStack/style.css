@@ -88,7 +88,12 @@ color: #00ff91; /* bright neon green */
   overflow: visible;
 }
 
-
+@media (max-width: 600px) {
+  .techStackSec--head--heading {
+    text-align: center; /* centers "TECH-STACK" heading */
+    width: 100%; /* ensures full width for centering */
+  }
+}
 
 @media (max-width: 1500px) {
   .techStackSec {

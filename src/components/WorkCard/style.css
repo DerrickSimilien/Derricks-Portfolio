@@ -113,12 +113,12 @@ mix-blend-mode: normal;
 
 
 @media (max-width: 600px) {
-  .workCard--body img {
+ .workCard--body img {
     width: 100%;
     height: auto;
     object-fit: cover;
     display: block;
-    border-radius: 8px; /* optional for aesthetic */
+    border-radius: 8px;
     padding: 0;
   }
 
@@ -136,6 +136,16 @@ mix-blend-mode: normal;
   .workCard {
     width: 100%;
     max-width: 100%;
+  }
+
+  .workCard--body h1 {
+    left: 0; /* remove the 10% offset */
+    text-align: center;
+    white-space: normal; /* allow wrapping if needed */
+    font-size: 32px; /* appropriate size for mobile */
+    width: 90%; /* optional: ensures readable line length */
+    margin: 20px auto 0 auto; /* center horizontally with spacing */
+     margin-bottom: 70px;
   }
 }
 
