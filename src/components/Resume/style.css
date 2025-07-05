@@ -169,6 +169,82 @@
         0 0 40px #00ff5e; /* stronger on hover */
 }
 
+
+@media (max-width: 600px) {
+  .resume--grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resume--grid--detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .resume--grid--detail--data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .resume--grid--detail--data--name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resume--grid--detail--data--name--icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .resume--grid--detail--data--skills {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  .resume--grid--detail--pic img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: -100px;
+     margin-left: -40px;
+  }
+
+  .resume--grid--detail--data--skills {
+  margin-top: 20px;
+}
+
+ .resume--grid--detail--data--skills .double {
+    flex-direction: column;
+    align-items: center; /* center horizontally */
+    gap: 20px; /* tighter gap for stacked lists */
+  }
+
+  .fadeList {
+    text-align: center; /* ensure list items are centered under header */
+    padding: 0;
+    margin: 0;
+  }
+
+  .fadeList li {
+    text-align: center;
+  }
+
+}
+
+
+
+
 @media (max-width: 1500px) {
   .resume {
     padding: 40px 60px;
@@ -214,4 +290,97 @@
     flex-direction: column-reverse;
     gap: 30px;
   }
+}
+
+@media (max-width: 768px) {
+  .resume {
+    padding: 20px;
+    padding-top: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resume--grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .resume--grid--detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .resume--grid--detail--pic img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin: -70px auto 0 auto;
+  }
+
+  .resume--grid--detail--data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .resume--grid--detail--data--name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resume--grid--detail--data--name--icons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .resume--grid--detail--data--skills {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .resume--grid--experience {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  .resume--grid--experience--head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .resume--grid--experience--body {
+    width: 100%;
+    padding: 0;
+  }
+
+  .resume--grid--detail--data--skills .double {
+    justify-content: center; 
+    gap: 40px; 
+    width: 100%;
+
+
+    
 }
