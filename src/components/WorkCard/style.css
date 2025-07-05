@@ -185,3 +185,54 @@ mix-blend-mode: normal;
     font-size: 14px;
   }
 }
+
+@media (max-width: 768px) {
+  /* Center the entire card content and align items */
+  .workCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* ensures headings are centered */
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px; /* optional: horizontal breathing room */
+  }
+
+  .workCard--head {
+    justify-content: center; /* center client and year */
+    gap: 20px; /* add spacing between client and year */
+    width: 100%;
+    text-align: center;
+  }
+
+  .workCard--body h1 {
+    position: relative;
+    top: 0;         /* remove top offset */
+    left: 0;        /* center horizontally */
+    font-size: 36px; /* appropriate tablet size */
+    text-align: center;
+    white-space: normal; /* allow wrapping */
+    width: 90%;
+    margin: 20px auto 20px auto; /* spacing above and below */
+  }
+
+  .workCard--body p {
+    position: relative;
+    left: 0;         /* remove previous left offset */
+    margin: 0 auto;  /* center horizontally */
+    max-width: 90%;  /* ensure good line length on tablet */
+    font-size: 16px; /* clear readability on tablet */
+    text-align: center;
+    margin-bottom: 30px; /* spacing below each card */
+    margin-top: 45px;
+  }
+
+  .workCard--body {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
