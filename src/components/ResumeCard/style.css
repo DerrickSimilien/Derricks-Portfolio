@@ -109,3 +109,50 @@
     padding-left: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .resps-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two columns */
+    gap: 10px 20px; /* adjust as needed for row/column gap */
+    padding-left: 0;
+    list-style-position: inside;
+  }
+
+  .resps-list li {
+    break-inside: avoid;
+    text-align: left;
+    width: 100%; /* ensures full width in each column */
+  }
+
+ .resumeCard--body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .resumeCard--body--right {
+    order: 3; /* move date below */
+    width: auto;
+    align-self: center; /* center horizontally */
+    margin-top: 10px;
+  }
+
+  .resumeCard--body--left {
+    order: 1;
+  }
+
+  .resumeCard--body--center {
+    order: 2;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .resps-list {
+    grid-template-columns: 1fr; /* revert to single column on small mobile */
+  }
+}
+

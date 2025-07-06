@@ -204,6 +204,24 @@ header .header--top a:hover {
   transform: scale(1.1);
 }
 
+header .header--top a:hover {
+  color: #00c853; /* vibrant green */
+  text-shadow: 0 0 5px #00c853,
+               0 0 10px #00c853,
+               0 0 20px #00ff5e,
+               0 0 40px #00ff5e;
+  transform: scale(1.1);
+}
+
+header .header--top a:hover * {
+  color: #00c853 !important;
+  text-shadow: 0 0 5px #00c853,
+               0 0 10px #00c853,
+               0 0 20px #00ff5e,
+               0 0 40px #00ff5e;
+}
+
+
 
 /* Mobile (≤600px) */
 @media (max-width: 600px) {
