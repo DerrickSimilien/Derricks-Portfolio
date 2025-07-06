@@ -84,6 +84,21 @@
   border-color: var(--dark);
 }
 
+
+.Icon--icon {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.Icon:hover .Icon--icon {
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 5px #00c853)
+          drop-shadow(0 0 10px #00c853)
+          drop-shadow(0 0 20px #00ff5e);
+}
+
+
+
+
 @media (max-width: 1500px) {
   .Icon--icon {
     width: 24px;
