@@ -81,7 +81,7 @@
   border: none;
   outline: none;
   padding: 1rem 0;
-  color: #fff;
+  color: #00c853; 
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -107,11 +107,12 @@
 }
 
 .footer--bottom p {
-  color: #e9eef1;
+  color: #00c853; 
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 18.2px */
+  text-shadow: 0 0 4px #00c853, 0 0 6px #00c853;
 }
 
 .footer--bottom p .header--hash {

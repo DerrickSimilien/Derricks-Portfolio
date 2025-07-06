@@ -30,8 +30,16 @@
 
 
 
-.scrambleText--con span {
+/* .scrambleText--con span {
   max-height: 1em;
   line-height: inherit;
   font-size: inherit;
 }
+
+.scrambleText--overlay,
+.scrambleText--overlay span,
+.scrambleText--overlay span span,
+.scrambleText--overlay * {
+  color: inherit !important;
+  text-shadow: inherit !important;
+} */
