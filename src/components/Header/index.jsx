@@ -67,27 +67,29 @@ export default function Header() {
         <Button icon={MenuIcon} onClick={handleMenuToggle} />
       </motion.div>
 
-      <motion.div initial="hidden" animate={controls} variants={blurVariants} transition={{ duration: 1, delay: 0.5 }} className="header--top">
-        <h3>
-          <a href="https://github.com/DerrickSimilien" target={"_blank"} rel="noopener noreferrer">
-            <ScrambleText shuffle delay={0.5}>
-              GITHUB
-            </ScrambleText>
-          </a>
-          <span className="header--hash">{"//"}</span>
-          <a href="https://www.linkedin.com/in/derrick-similien-2566542b5/" target={"_blank"} rel="noopener noreferrer">
-            <ScrambleText shuffle delay={1}>
-              LINKEDIN
-            </ScrambleText>
-          </a>
-          <span className="header--hash">{"//"}</span>
-          <a href="/DerrickSimilienResume.pdf" target={"_blank"} rel="noopener noreferrer">
-            <ScrambleText shuffle delay={1.5}>
-              RESUME
-            </ScrambleText>
-          </a>
-        </h3>
-      </motion.div>
+     <motion.div
+  initial={{ opacity: 0, filter: "blur(10px)" }}
+  animate={{
+    opacity: menuVisible ? 0 : 1,
+    filter: menuVisible ? "blur(10px)" : "blur(0px)"
+  }}
+  transition={{ duration: 0.5 }}
+  className="header--top"
+>
+  <h3>
+    <a href="https://github.com/DerrickSimilien" target="_blank" rel="noopener noreferrer">
+      <ScrambleText shuffle delay={0.5}>GITHUB</ScrambleText>
+    </a>
+    <span className="header--hash">//</span>
+    <a href="https://www.linkedin.com/in/derrick-similien-2566542b5/" target="_blank" rel="noopener noreferrer">
+      <ScrambleText shuffle delay={1}>LINKEDIN</ScrambleText>
+    </a>
+    <span className="header--hash">//</span>
+    <a href="/DerrickSimilienResume.pdf" target="_blank" rel="noopener noreferrer">
+      <ScrambleText shuffle delay={1.5}>RESUME</ScrambleText>
+    </a>
+  </h3>
+</motion.div>
 
       <motion.div initial="hidden" animate={controls} variants={blurVariants} transition={{ duration: 1, delay: 4 }} className="header--bottom">
         <div>
