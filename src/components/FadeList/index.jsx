@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import "./style.css"
 import ScrambleText from "../ScrambleText"
 
-const FadeList = ({ data, delay, controls, shuffle = false, className = "" }) => {
+const FadeList = ({ data, delay, controls, shuffle = false, className = "", disableScramble = false }) => {
 
   const listVariants = {
     hidden: { opacity: 0 },
@@ -32,11 +32,15 @@ const FadeList = ({ data, delay, controls, shuffle = false, className = "" }) =>
    <motion.ul initial="hidden" animate={controls} variants={listVariants} className={`fadeList ${className}`}>
 
       {data.map((item, index) => (
-        <motion.li key={index} variants={liVariants}>
-          <ScrambleText shuffle={shuffle} delay={delay}>
-            {item}
-          </ScrambleText>
-        </motion.li>
+  <motion.li key={index} variants={liVariants}>
+    {disableScramble ? (
+      item
+    ) : (
+      <ScrambleText shuffle={shuffle} delay={delay}>
+        {item}
+      </ScrambleText>
+    )}
+  </motion.li>
       ))}
     </motion.ul>
   )

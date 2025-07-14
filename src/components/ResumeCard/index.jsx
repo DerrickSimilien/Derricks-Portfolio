@@ -36,11 +36,12 @@ export default function ResumeCard({ experienceList, controls, delay }) {
 
         <div className="resumeCard--body--center">
           {/* <FadeList delay={delay} controls={controls} data={experienceList.resps} /> */}
-          <FadeList
+     <FadeList
   delay={delay}
   controls={controls}
   data={experienceList.resps}
   className="resps-list"
+  disableScramble={true}
 />
         </div>
 

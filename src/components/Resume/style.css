@@ -153,11 +153,11 @@
 }
 
 .resume--grid--detail--data--name h2 {
-    color: #00ff5e; /* lighter neon green */
+    color: #00ff5e; 
     text-shadow:
         0 0 5px #00ff5e,
         0 0 10px #00ff5e,
-        0 0 20px #00ff5e; /* bright layered glow */
+        0 0 20px #00ff5e; 
     transition: all 0.3s ease;
 }
 
@@ -166,7 +166,7 @@
     text-shadow:
         0 0 10px #00ff5e,
         0 0 20px #00ff5e,
-        0 0 40px #00ff5e; /* stronger on hover */
+        0 0 40px #00ff5e; 
 }
 
 

@@ -51,7 +51,7 @@
 .resumeCard--body--right h4 *,
 .resumeCard--body--right p,
 .resumeCard--body--right p * {
-    color: #00c853 !important; /* vibrant green */
+    color: #00c853 !important; 
 }
 
 .resumeCard--body--right h4:hover,
