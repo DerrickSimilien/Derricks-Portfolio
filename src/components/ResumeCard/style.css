@@ -150,6 +150,9 @@
 
 }
 
+
+
+
 @media (max-width: 600px) {
   .resps-list {
     grid-template-columns: 1fr; /* revert to single column on small mobile */
