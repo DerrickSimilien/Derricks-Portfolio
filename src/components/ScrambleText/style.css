@@ -27,6 +27,9 @@
   height: 100%;
 }
 
+@media (max-width: 768px) {
+  .scrambleText .scrambleText--overlay { display: none; }
+}
 
 
 
