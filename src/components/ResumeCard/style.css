@@ -148,6 +148,16 @@
     order: 2;
   }
 
+   .resumeCard--body--center ul {
+    padding-left: 20px;
+    list-style-position: outside;
+  }
+
+  .resumeCard--body--center ul li {
+    margin-bottom: 12px; /* increase spacing between bullet points */
+    line-height: 150%; /* improve readability */
+  }
+
 }
 
 

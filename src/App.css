@@ -49,4 +49,7 @@
   }
 }
 
+@media (max-width: 768px) {
+  .theme--text { white-space: normal; line-height: 140%; }
+}
 
