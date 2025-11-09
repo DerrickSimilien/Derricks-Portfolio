@@ -377,5 +377,10 @@ header .header--top a:hover {
                  0 0 40px #00ff5e !important;
     transform: scale(1.1) !important;
   }
+
+    .header, .header * {
+    mix-blend-mode: normal !important;
+    text-shadow: none !important;
+  }
 }
 
