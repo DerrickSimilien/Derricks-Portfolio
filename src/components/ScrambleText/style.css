@@ -15,10 +15,10 @@
   line-height: inherit;
 }
 
-.scrambleText > span:not(.scrambleText--overlay) {
+/* .scrambleText > span:not(.scrambleText--overlay) {
   opacity: 0;
   display: inline-flex;
-}
+} */
 .scrambleText .scrambleText--overlay {
   position: absolute;
   left: 0;
